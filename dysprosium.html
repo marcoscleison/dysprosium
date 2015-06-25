@@ -1,0 +1,63 @@
+<!--
+Simple Collection of webcomponent. License Apache 2 Author: Marcos Cleison S. Santana.
+-->
+
+<!-- Simple Login form -->
+<dom-module id="dy-simple-login">
+    <style>
+        .container {
+            padding: 25px;
+            position: fixed;
+        }
+        
+        .form-login {
+            background-color: #EDEDED;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 15px;
+            border-color: #d2d2d2;
+            border-width: 5px;
+            box-shadow: 0 1px 0 #cfcfcf;
+        }
+        
+        h4 {
+            border: 0 solid #fff;
+            border-bottom-width: 1px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        .form-control {
+            border-radius: 10px;
+        }
+        
+        .wrapper {
+            text-align: center;
+        }
+    </style>
+
+    <template>
+        <div class="">
+        <div class="form-login">
+            <h4>Login.</h4>
+            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" name="login">
+            <br>
+            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" name="password">
+            <br>
+            <div class="wrapper">
+                <span class="group-btn">     
+                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+            </span>
+            </div>
+        </div>
+</div>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'dy-simple-login'
+        });
+    </script>
+</dom-module>

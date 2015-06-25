@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dysprosium Test</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="dep/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="dep/polymer/polymer.html" />
+
+    <link rel="stylesheet" href="dep/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="dep/bootstrap/dist/css/bootstrap-theme.css" />
+
+
+    <link rel="import" href="dysprosium.html" />
+
+    <script>
+        //this initalizaton is needed to run in firefox (?????) 
+        window.addEventListener('WebComponentsReady', function () {
+
+            console.log("Webcomponents started!")
+
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <dy-simple-login></dy-simple-login>
+</body>
+
+</html>
